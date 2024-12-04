@@ -46,15 +46,12 @@ body, html {
     transition: all 0.3s ease, opacity 0.5s ease;
     z-index: 2147483647;
     opacity: 1;
-    touch-action: none;
 }
 
 /* 控制按鈕 */
 .control-btn {
     width: 42px;
     height: 42px;
-    min-width: 42px;
-    min-height: 42px;
     border: none;
     border-radius: 12px;
     background: rgba(28, 32, 48, 0.6);
@@ -71,7 +68,6 @@ body, html {
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    touch-action: manipulation;
 }
 
 /* 控制按鈕懸停效果 */
@@ -271,36 +267,6 @@ select.control-btn {
 :-moz-full-screen .floating-controls:hover,
 :-ms-fullscreen .floating-controls:hover {
     opacity: 1;
-}
-
-/* 觸控裝置的特殊樣式 */
-@media (hover: none) and (pointer: coarse) {
-    .floating-controls {
-        bottom: 20px;
-        padding: 20px 30px;
-        gap: 20px;
-    }
-
-    .control-btn {
-        width: 48px;
-        height: 48px;
-        min-width: 48px;
-        min-height: 48px;
-    }
-
-    .slider-container {
-        height: 6px;
-    }
-
-    .slider-thumb {
-        width: 18px;
-        height: 18px;
-        right: -9px;
-    }
-
-    .volume-bar {
-        width: 120px;
-    }
 }
 
 /* 其餘所有 CSS 樣式... */ 
